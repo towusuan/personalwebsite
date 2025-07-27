@@ -91,8 +91,8 @@
 
         /* Hero Section */
         .hero {
-            padding: var(--space-xxl) var(--space-md) var(--space-xl);
-            min-height: 50vh;
+            padding: var(--space-xxl) var(--space-md) var(--space-lg);
+            min-height: 40vh;
             display: flex;
             align-items: center;
         }
@@ -117,9 +117,28 @@
 
         .greeting-welcome {
             font-family: var(--font-sans);
-            color: #66CDAA;
             display: inline-block;
             font-weight: 600;
+            background: linear-gradient(
+                90deg,
+                #7953cd 0%,
+                #00affa 25%,
+                #0190cd 50%,
+                #764ada 75%,
+                #7953cd 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: textShine 3s linear infinite;
+            will-change: background-position;
+        }
+
+        @keyframes textShine {
+            to {
+                background-position: 200% center;
+            }
         }
 
         @keyframes shimmer {
@@ -279,12 +298,9 @@
                 <p class="intro-text fade-in delay-1">I'm Tony Owusu-Ansah,</p>
                 <p class="intro-title fade-in delay-1">Digital Solutions Partner</p>
                 <p class="intro-description fade-in delay-2">
-                    I lead a team of experienced software engineers and technical specialists who deliver 
-                    end-to-end digital transformation solutions. Together, we partner with enterprises, SMBs, 
-                    and startups to tackle their most complex technology challenges—from cloud migration and 
-                    cybersecurity to custom software development and digital innovation. My role is to understand 
-                    your business needs, architect the right solution, and ensure my team delivers exceptional 
-                    results that drive measurable business value.
+                    Leading digital transformation through strategic consulting and world-class technical execution. 
+                    My team and I bridge the gap between business vision and technology reality, delivering solutions 
+                    that drive measurable value from cloud migration to custom software development.
                 </p>
             </div>
         </section>
